@@ -1,3 +1,6 @@
+import React from "react";
+
+
 // console.log(Gallery);
 // console.log(Gallery[0]);
 

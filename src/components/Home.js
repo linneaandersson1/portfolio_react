@@ -1,8 +1,16 @@
+import React from "react";
+import PanelOne from "./PanelOne";
+import PanelTwo from "./PanelTwo";
+
 const Home = () => {
     return (
-        <div className="container">
+        <>
             <h1>Home page</h1>
-        </div>
+            <p>Tidigare projekt</p>
+        
+                <PanelOne />
+                <PanelTwo />
+        </>
     );
 };
 

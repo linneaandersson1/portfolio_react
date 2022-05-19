@@ -1,3 +1,7 @@
+import React from "react";
+
+
+
 // Här har jag försökt skriva om galleri uppgiften i javascript till react, jag får error för att jag 
 // skriver 
 
