@@ -135,6 +135,17 @@ p {
   transition: opacity 0.3s ease-in 0.4s;
 }
 
+.modal-btn {
+  min-width: 100px;
+  padding: 16px 32px;
+  border-radius: 4px;
+  border: none;
+  background-color: #141414;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
 @media (max-width: 480px) {
   .panel-container {
     width: 100vw;

@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Form from "./components/Form";
 
 // import Panels from "./components/Panels";
 
@@ -21,6 +22,7 @@ function App() {
             <Route path="/" element={<Home />}/>
             <Route path="/about" exact element={<About />}/>
             <Route path="/contact" exact element={<Contact />}/>
+            <Route path="/form" exact element={<Form />}/>
         </Routes>
       </div>
       <div>

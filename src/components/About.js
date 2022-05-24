@@ -1,8 +1,11 @@
 import React from "react";
+import List from "./List";
+
 const About = () => {
     return (
         <div style={{marginTop: "10px"}} className="container">
             <h1>About page</h1>
+            <List />
             <div className="link__list">
                 <ul>
                     <li>Page 1</li>

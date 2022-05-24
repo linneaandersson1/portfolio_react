@@ -1,9 +1,23 @@
 import React from "react";
+import Modal from "./Modal";
 
 const Contact = () => {
+    const [show, setShow] = useState(false);
+
     return (
         <div style={{marginTop: "10px"}} className="container">
-            <h1>Contact page</h1>
+           {show && (
+               <Modal closeModal={() => setShow(false)}>
+                <h1>Info about booking a call!</h1>
+               </Modal> 
+           )}
+
+           <div>
+               <button className="modal-btn" onClick={() => setShow(true)}>
+                   Book a call
+               </button>
+           </div>
+
         </div>
     );
 };
