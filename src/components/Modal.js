@@ -1,14 +1,21 @@
-import { Modal } from "bootstrap";
 import React, {useState} from "react";
+import Modal from "react-modal";
 
-const Modal = ({setShowModal, children}) => {
+Modal.setAppElement("#root");
 
+function Modal () {
+    const [isOpen, setIsOpen] = useState(false);
+    const toggelModal = () => {
+        setIsOpen(!isOpen);
+    };
+   
     return (
         <>
-         <div style={{marginTop: "10px"}} className="container">
-         {children}
-        <div onClick={closeModal}>X</div>
-        </div>
+        <button className="popup" onClick={toggleModal}>Call Me!</button>
+        <Modal isOpen={isOpen} onRequestClose={toggelModal} contentLabel="Call Me">
+            <div>Call me at: 2929293</div>
+            <button onClick={toggelModal}>Close modal</button>
+        </Modal>
         </>
     );
 };
